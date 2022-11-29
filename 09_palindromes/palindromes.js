@@ -1,5 +1,17 @@
-const palindromes = function () {
+const palindromes = function (string) {
 
+    // remove punctuation 
+    const newString = string.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
+                            .replace(/\s{2,}/g, " ")
+                            .replaceAll(" ","")
+                            .toLowerCase();
+
+    // slice newString to an array, reverse the order, and then join back to string
+    const reverseString = [...newString].reverse().join("");
+
+    if (newString === reverseString) return true;
+
+    else return false;
 };
 
 // Do not edit below this line
