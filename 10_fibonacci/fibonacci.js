@@ -2,6 +2,8 @@ const fibonacci = function(n) {
     n = +n; // accept string
 
     if (n < 0) return "OOPS";
+
+    if (n === 0) return 0;
     
     let fibList = [1, 1];
 
