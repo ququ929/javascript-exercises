@@ -9,9 +9,9 @@ const palindromes = function (string) {
     // slice newString to an array, reverse the order, and then join back to string
     const reverseString = [...newString].reverse().join("");
 
-    if (newString === reverseString) return true;
+    return newString === reverseString;
 
-    else return false;
+    
 };
 
 // Do not edit below this line
