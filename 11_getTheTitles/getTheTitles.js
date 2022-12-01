@@ -1,11 +1,14 @@
 const getTheTitles = function(books) {
-    let titles = [];
+    // when we want to create a new array, we can use array.prototype.map
+    return books.map(book => book.title);
 
-    for (let book of books) {
-        titles.push(book.title);
-    }
+    // let titles = [];
 
-    return titles;
+    // for (let book of books) {
+    //     titles.push(book.title);
+    // }
+
+    // return titles;    
 };
 
 // Do not edit below this line
